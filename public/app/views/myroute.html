@@ -15,7 +15,11 @@
             <a  class="navbar-brand" href="#"> <strong >Help </strong></a>
           </div>
           <div class="form-group">
-            <modal-registration></modal-registration>
+            <button type="submit" class="btn btn-gui" ng-click='toggleModal()'>Регистрация</button>
+            <modal-registration show='modalShown' width='750px' height='60%'>
+              Content
+            </modal-registration>
+
           </div>
             <button type="submit" class="btn btn-gui" ng-click="">Вход</button>
         </form>
