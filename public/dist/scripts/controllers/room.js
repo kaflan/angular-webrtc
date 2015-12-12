@@ -21,9 +21,9 @@ angular.module('publicApp')
 
     };
     $scope.call = function() {
-      webrtc.on('readyToCall', function() {
+      // webrtc.on('readyToCall', function() {
         // you can name it anything
         webrtc.joinRoom('your awesome room name');
-      });
+      // });
     }
   });
