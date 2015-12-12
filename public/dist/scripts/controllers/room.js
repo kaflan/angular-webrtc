@@ -27,6 +27,6 @@ angular.module('publicApp')
       // });
     }
     $scope.getLocalVideo = function() {
-      return $sce.trustAsResourceUrl(stream);
+      return $sce.trustAsResourceUrl();
     };
   });

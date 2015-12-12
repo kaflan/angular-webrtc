@@ -10,9 +10,8 @@ $(document).ready(function() {
   });
   $('.call').click(function() {
     console.log('call');
-    webrtc.joinRoom('your awesome room name');
   });
-  $('.close').click(function() {
+  $('.ban').click(function() {
     console.log('close');
   });
 });
