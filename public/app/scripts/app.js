@@ -29,7 +29,7 @@ angular
         controllerAs: 'myroute'
       })
       .otherwise({
-        redirectTo: '/room'
+        redirectTo: '/myroute'
       });
   });
 
@@ -40,5 +40,5 @@ angular.module('publicApp')
 
 Object.setPrototypeOf = Object.setPrototypeOf || function(obj, proto) {
   obj.__proto__ = proto;
-  return obj; 
+  return obj;
 };
