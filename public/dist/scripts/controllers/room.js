@@ -8,7 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('RoomCtrl', function($scope) {
+  .controller('RoomCtrl', function($scope, $sce) {
     var webrtc = new SimpleWebRTC({
       // the id/element dom element that will hold "our" video
       localVideoEl: 'localVideo',
@@ -22,8 +22,11 @@ angular.module('publicApp')
     };
     $scope.call = function() {
       // webrtc.on('readyToCall', function() {
-        // you can name it anything
-        webrtc.joinRoom('your awesome room name');
+      // you can name it anything
+      webrtc.joinRoom('your awesome room name');
       // });
     }
+    $scope.getLocalVideo = function() {
+      return $sce.trustAsResourceUrl(stream);
+    };
   });
