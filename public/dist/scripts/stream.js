@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  console.log('wjg,jh');
   var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold "our" video
     localVideoEl: 'localVideo',
@@ -13,6 +14,5 @@ $(document).ready(function() {
   });
   $('.close').click(function() {
     console.log('close');
-
   });
 });
