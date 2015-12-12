@@ -13,12 +13,19 @@ angular.module('publicApp')
     $scope.toggleModal = function() {
       $scope.modalShown = !$scope.modalShown;
     };
-    $scope.send = function(){
-      if(user){
-      send.query(user);
-    } else{
-      alert('введите емайл и пороль');
-    }
+    $scope.send = function() {
+      if (user) {
+        send.query(user);
+      } else {
+        alert('введите емайл и пороль');
+      }
 
     }
+    $scope.enter = function(){
+      if (user) {
+        send.query(user);
+      } else {
+        alert('введите емайл и пороль');
+      }
+    };
   });

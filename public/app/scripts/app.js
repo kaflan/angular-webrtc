@@ -28,6 +28,11 @@ angular
         controller: 'MyrouteCtrl',
         controllerAs: 'myroute'
       })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
       .otherwise({
         redirectTo: '/myroute'
       });
