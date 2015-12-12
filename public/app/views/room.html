@@ -5,15 +5,12 @@
   <br>
   <span ng-bind="error"></span>
 </div>
- <div class="container">
-  
- </div>
 <div class="video-wrapper">
   <video-player class="col-md-4" ng-repeat="peer in peers" vid-src="{{peer.stream}}"></video-player>
 </div>
 
 <div class="video-wrapper">
-  <div class="col-md-2">
+  <div class="col-md-6">
     <video ng-src="{{getLocalVideo()}}" autoplay muted></video>
   </div>
 </div>
