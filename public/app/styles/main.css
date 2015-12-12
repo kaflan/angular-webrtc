@@ -5,3 +5,10 @@
   color: rgba(#e8d0d0, 0.66);
   text-decoration: none;
 }
+.gui {
+  background: #7CB9EC;
+}
+.navbar-blue{
+  background: #00BCD4;
+  color: #fff;
+}
