@@ -51,9 +51,5 @@ angular.module('publicApp')
     $scope.getLocalVideo = function () {
       return $sce.trustAsResourceUrl(stream);
     };
-    $scope.modalShown = false;
-    $scope.toggleModal = function() {
-      console.log('modal');
-      $scope.modalShown = !$scope.modalShown;
-    };
+
   });

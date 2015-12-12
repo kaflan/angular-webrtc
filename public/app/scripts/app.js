@@ -33,6 +33,11 @@ angular
         controller: 'LoginCtrl',
         controllerAs: 'login'
       })
+      .when('/call',{
+        templateUrl: 'views/call.html',
+        controller: 'CallCtrl',
+        controllerAs: 'call'
+      })
       .otherwise({
         redirectTo: '/myroute'
       });

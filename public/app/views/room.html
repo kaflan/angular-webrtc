@@ -6,10 +6,13 @@
   <span ng-bind="error"></span>
 </div>
  <div class="container">
-   <button type="button"  name="button" ng-click="toggleModal2()">Call</button>
-   <call-modal show='modalShown'  width='750px' height='60%'>
+   <call>
+     <button type="button"  name="button" ng-click="toggleModal()">Call</button>
+   </call>
+
+   <!-- <show='modalShown2'  width='750px' height='60%'>
     <main class="container"> hello</main>
-   </call-modal>
+   </call-modal> -->
  </div>
 <div class="video-wrapper">
   <video-player class="col-md-4" ng-repeat="peer in peers" vid-src="{{peer.stream}}"></video-player>
