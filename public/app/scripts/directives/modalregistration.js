@@ -24,8 +24,9 @@ angular.module('publicApp')
         scope.dialogStyle.height = attrs.height;
       scope.hideModal = function() {
         scope.show = false;
+        console.log(scope.user);  
       };
     },
-    template: "<div class='ng-modal' ng-show='show'><div class='ng-modal-overlay' ng-click='hideModal()'></div><div class='ng-modal-dialog' ng-style='dialogStyle'><div class='ng-modal-close' ng-click='hideModal()'>X</div><div class='ng-modal-dialog-content' ng-transclude></div></div></div>"
+    templateUrl: "views/modal-registration.html"
   };
   });
