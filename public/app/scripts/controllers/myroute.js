@@ -19,13 +19,5 @@ angular.module('publicApp')
       } else {
         alert('введите емайл и пороль');
       }
-
-    }
-    $scope.enter = function(){
-      if (user) {
-        send.query(user);
-      } else {
-        alert('введите емайл и пороль');
-      }
     };
   });

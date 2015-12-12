@@ -11,6 +11,6 @@ angular.module('publicApp')
     return {
       templateUrl: 'views/signInForm.html',
       restrict: 'E',
-      controller: 'MyrouteCtrl'
+      controller: 'LoginCtrl'
     };
   });
