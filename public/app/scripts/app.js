@@ -23,6 +23,11 @@ angular
         templateUrl: 'views/room.html',
         controller: 'RoomCtrl'
       })
+      .when('/myroute', {
+        templateUrl: 'views/myroute.html',
+        controller: 'MyrouteCtrl',
+        controllerAs: 'myroute'
+      })
       .otherwise({
         redirectTo: '/room'
       });
