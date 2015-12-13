@@ -10,10 +10,11 @@
 angular.module('publicApp')
   .controller('LoginCtrl', function ($scope) {
     $scope.enter = function(){
-      if (user||user.mail||user.password) {
-        send.query(user);
-      } else {
-        alert('введите емайл и пороль');
-      }
+      window.location.href = "http://qui.shpp.me:1213";
+      // if (user||user.mail||user.password) {
+      //   send.query(user);
+      // } else {
+      //   alert('введите емайл и пороль');
+      // }
     };
   });
