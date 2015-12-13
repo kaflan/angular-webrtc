@@ -14,10 +14,11 @@ angular.module('publicApp')
       $scope.modalShown = !$scope.modalShown;
     };
     $scope.send = function() {
-      if (user) {
-        send.query(user);
-      } else {
-        alert('введите емайл и пороль');
-      }
+      window.location.href = "http://qui.shpp.me:1213";
+      // if (user) {
+      //   send.query(user);
+      // } else {
+      //   alert('введите емайл и пороль');
+      // }
     };
   });
