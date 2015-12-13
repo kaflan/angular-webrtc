@@ -33,13 +33,23 @@ angular
         controller: 'LoginCtrl',
         controllerAs: 'login'
       })
+      .when('/work', {
+        templateUrl: 'views/work.html',
+        controller: 'WorkCtrl',
+        controllerAs: 'work'
+      })
+      when('/videochat', {
+        templateUrl: 'views/vidiochat.html',
+        controller: 'WorkCtrl',
+        controllerAs: 'work'
+      })
       .when('/call',{
         templateUrl: 'views/call.html',
         controller: 'CallCtrl',
         controllerAs: 'call'
       })
       .otherwise({
-        redirectTo: '/myroute'
+        redirectTo: '/'
       });
   });
 
