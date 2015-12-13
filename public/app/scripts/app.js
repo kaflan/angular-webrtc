@@ -24,7 +24,7 @@ angular
         controller: 'RoomCtrl'
       })
       .when('/myroute', {
-        templateUrl: 'views/myroute.html',
+        templateUrl: 'views/lending.html',
         controller: 'MyrouteCtrl',
         controllerAs: 'myroute'
       })

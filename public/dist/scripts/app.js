@@ -19,10 +19,6 @@ angular
         templateUrl: 'views/room.html',
         controller: 'RoomCtrl'
       })
-      .when('/room', {
-        templateUrl: 'views/room.html',
-        controller: 'RoomCtrl'
-      })
       .when('/myroute', {
         templateUrl: 'views/myroute.html',
         controller: 'MyrouteCtrl',
@@ -38,7 +34,7 @@ angular
         controller: 'WorkCtrl',
         controllerAs: 'work'
       })
-      when('/videochat', {
+      .when('/videochat', {
         templateUrl: 'views/vidiochat.html',
         controller: 'WorkCtrl',
         controllerAs: 'work'
@@ -49,7 +45,7 @@ angular
         controllerAs: 'call'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/myroute'
       });
   });
 
